@@ -3,19 +3,19 @@ const getRandom = (min, max) => {
 }
 
 if (typeof registerPaint !== 'undefined') {
-  class Sparkles {
+  class ExtraSparkles {
     static get inputProperties() {
-      return ['--sparkleNumber', '--sparkleHue', '--sparkleHeightVariance', '--sparkleWidthVariance', '--sparkleWeightVariance']
+      return ['--extra-sparkleNumber', '--extra-sparkleHue', '--extra-sparkleHeightVariance', '--extra-sparkleWidthVariance', '--extra-sparkleWeightVariance']
     }
   
     paint(ctx, size, properties) {
-      const sparkles = properties.get('--sparkleNumber')
+      const sparkles = properties.get('--extra-sparkleNumber')
       const minHeight = 3
-      const maxHeight = minHeight + parseInt(properties.get('--sparkleHeightVariance'))
+      const maxHeight = minHeight + parseInt(properties.get('--extra-sparkleHeightVariance'))
       const minWidth = 3
-      const maxWidth = minWidth + parseInt(properties.get('--sparkleWidthVariance'))
+      const maxWidth = minWidth + parseInt(properties.get('--extra-sparkleWidthVariance'))
       const minWeight = 1
-      const maxWeight = minWeight + parseInt(properties.get('--sparkleWeightVariance'))
+      const maxWeight = minWeight + parseInt(properties.get('--extra-sparkleWeightVariance'))
       
       for (let i = 0; i < sparkles; i++) {
         const x = Math.random() * size.width
@@ -25,7 +25,7 @@ if (typeof registerPaint !== 'undefined') {
         const strokeWidth = getRandom(minWeight, maxWeight)
         
         // Set Color
-        const hueVal = parseInt(properties.get('--sparkleHue'))
+        const hueVal = parseInt(properties.get('--extra-sparkleHue'))
         const hue = getRandom(hueVal, hueVal + 20)
         const sat = getRandom(90,100)
         const light = getRandom(50,100)
@@ -46,5 +46,5 @@ if (typeof registerPaint !== 'undefined') {
     }
   }
   
-  registerPaint('sparkles', Sparkles)
+  registerPaint('extra-sparkles', ExtraSparkles)
 }

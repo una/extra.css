@@ -14,6 +14,7 @@ if (typeof registerPaint !== 'undefined') {
       const width = 20;
       
       
+    }
   }
   
   registerPaint('extra-emoji', ExtraEmoji)

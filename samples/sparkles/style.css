@@ -22,12 +22,12 @@ h1 {
       Optionally set property values. 
       This can be done at root or local scope 
     */
-    --sparkleNumber: 60; /* defaults to 30 */
-    --sparkleHue: 180; /* Defaults to 60 (yellow) */
-    --sparkleHeightVariance: 12; /* Defaults to 9 */
-    --sparkleWidthVariance: 15; /* Defaults to 12 */
-    --sparkleWeightVariance: 3; /* Defaults to 2 */
+    --extra-sparkleNumber: 60; /* defaults to 30 */
+    --extra-sparkleHue: 180; /* Defaults to 60 (yellow) */
+    --extra-sparkleHeightVariance: 12; /* Defaults to 9 */
+    --extra-sparkleWidthVariance: 15; /* Defaults to 12 */
+    --extra-sparkleWeightVariance: 3; /* Defaults to 2 */
   
-    background: paint(sparkles);
+    background: paint(extra-sparkles);
   }
 }
