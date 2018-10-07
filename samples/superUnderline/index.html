@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Sparkles</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <h1>Hello World</h1>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit <a>asperiores</a> cupiditate dolor quo iste animi, eveniet in inventore <a>obcaecati</a> quisquam architecto pariatur et perspiciatis, deleniti voluptatum consequuntur <a>voluptas</a> voluptatibus repellat!</p>
+  <script>
+    if ('paintWorklet' in CSS) {
+      CSS.paintWorklet.addModule('./worklet.js');
+    }
+  </script>
+  <script src='properties.js'></script>
+</body>
+</html>

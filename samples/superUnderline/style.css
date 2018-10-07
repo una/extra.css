@@ -1,0 +1,45 @@
+body {
+  font-family: monospace;
+  height: 100vh;
+  width: 100vw;
+  text-align: center;
+}
+
+p {
+  max-width: 660px;
+  margin: 0 auto;
+  font-weight: 300;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  text-align: left;
+}
+
+h1 {
+  font-size: 4rem;
+  display: inline-block;
+  font-weight: 100;
+  margin: 1rem auto;
+}
+
+@supports (background: paint(something)) {
+  h1 {
+    /* 
+      Optionally set property values. 
+      This can be done at root or local scope 
+    */
+    --extra-underlineNumber: 5; /* default: 3 */
+    --extra-underlineColor: #8266ff; /* default: black */
+    --extra-underlineSpread: 15; /* default: 20 */
+    --extra-underlineWidth: 1; /* default: 2 */
+
+    background: paint(extra-superUnderline);
+    line-height: 1.5;
+  }
+
+  a {
+    --extra-underlineColor: #00eeff; /* default: black */
+    --extra-underlineSpread: 10; /* default: 20 */
+
+    background: paint(extra-superUnderline);
+  }
+}
