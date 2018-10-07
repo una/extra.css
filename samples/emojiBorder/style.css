@@ -18,8 +18,8 @@ h1 {
 
 @supports (background: paint(something)) {
   h1 {
-    --emoji: url('unacorn.svg');
+    --emoji: '💕';
     border: 60px solid;
-    border-image-source: var(--emoji);
+    border-image-source: paint(extra-emoji);
   }
 }
