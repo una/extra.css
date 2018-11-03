@@ -10,7 +10,7 @@ p {
   margin: 0 auto;
   font-weight: 300;
   font-size: 1.2rem;
-  line-height: 1.5;
+  line-height: 2;
   text-align: left;
 }
 
@@ -19,6 +19,7 @@ h1 {
   display: inline-block;
   font-weight: 100;
   margin: 1rem auto;
+  padding: 1rem 2rem;
 }
 
 @supports (background: paint(something)) {
@@ -31,20 +32,17 @@ h1 {
     --extra-scallopColor: #8266ff; /* default: black */
     --extra-scallopWeight: 3; /* default: 2 */
 
-    /* Must add padding to show border, TODO auto? */
-    padding: 1rem;
-
     background: paint(extra-scallopedBorder);
     line-height: 1.5;
   }
 
-  a {
+  i {
     --extra-scallopRadius: 5; /* default: 10 */
     --extra-scallopColor: #00eeff; /* default: black */
     --extra-scallopWeight: 1; /* default: 2 */
 
-    /* Must add padding to show border */
-    padding: 1rem;
+    /* Must add padding to show border properly*/
+    padding: 0.75rem;
 
     background: paint(extra-scallopedBorder);
   }

@@ -13,7 +13,7 @@ CSS.registerProperty({
 });
 
 CSS.registerProperty({
-  name: '--extra-scallopWidth',
+  name: '--extra-scallopWeight',
   syntax: '<number>',
   inherits: false,
   initialValue: 2

@@ -5,13 +5,15 @@ if (typeof registerPaint !== 'undefined') {
     }
   
     paint(ctx, size, properties) {
-      const radius = properties.get('--extra-scallopRadius')
-      const lineWidth = properties.get('--extra-scallopWeight')
+      // why doesn't this work?
+      // const radius = properties.get('--extra-scallopRadius')
+      const radius = 10
+      const scallopWeight = properties.get('--extra-scallopWeight')
       const color = properties.get('--extra-scallopColor')
       const height = size.height
       const width = size.width
 
-      ctx.lineWidth = lineWidth
+      ctx.lineWidth = scallopWeight
       ctx.strokeStyle = color
       
       const getSteps = (sizeVal) => {
@@ -39,28 +41,28 @@ if (typeof registerPaint !== 'undefined') {
       // top
       for (let i = 0; i <= getSteps(width); i++) {
         ctx.beginPath()
-        ctx.arc(horizRadius + horizRadius + (horizRadius * i * 2), horizRadius, horizRadius, 0, Math.PI, true)
+        ctx.arc(horizRadius + horizRadius + (horizRadius * i * 2), horizRadius + (scallopWeight * 1) , horizRadius, 0, Math.PI, true)
         ctx.stroke()
       }
 
       // bottom
       for (let i = 0; i <= getSteps(width); i++) {
         ctx.beginPath()
-        ctx.arc(horizRadius + horizRadius + (horizRadius * i * 2), height - horizRadius, horizRadius, 0, Math.PI, false)
+        ctx.arc(horizRadius + horizRadius + (horizRadius * i * 2), height - horizRadius - (scallopWeight * 1), horizRadius, 0, Math.PI, false)
         ctx.stroke()
       }
 
       // left
       for (let i = 0; i <= getSteps(height); i++) {
         ctx.beginPath()
-        ctx.arc(vertRadius, vertRadius + vertRadius + (vertRadius * i * 2), vertRadius, Math.PI * 0.5,  Math.PI * 1.5, false);
+        ctx.arc(vertRadius + (scallopWeight * 1), vertRadius + vertRadius + (vertRadius * i * 2), vertRadius, Math.PI * 0.5,  Math.PI * 1.5, false);
         ctx.stroke()
       }
 
       // right
       for (let i = 0; i <= getSteps(height); i++) {
         ctx.beginPath()
-        ctx.arc(width - vertRadius, vertRadius + vertRadius + (vertRadius * i * 2), vertRadius, Math.PI * 0.5,  Math.PI * 1.5, true);
+        ctx.arc(width - vertRadius - (scallopWeight * 1), vertRadius + vertRadius + (vertRadius * i * 2), vertRadius, Math.PI * 0.5,  Math.PI * 1.5, true);
         ctx.stroke()
       }
     }
