@@ -5,9 +5,7 @@ if (typeof registerPaint !== 'undefined') {
     }
   
     paint(ctx, size, properties) {
-      // why doesn't this work?
-      // const radius = properties.get('--extra-scallopRadius')
-      const radius = 10
+      const radius = properties.get('--extra-scallopRadius').value
       const scallopWeight = properties.get('--extra-scallopWeight')
       const color = properties.get('--extra-scallopColor')
       const height = size.height
