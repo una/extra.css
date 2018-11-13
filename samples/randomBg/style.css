@@ -1,0 +1,32 @@
+body {
+  font-family: monospace;
+  height: 100vh;
+  width: 100vw;
+  text-align: center;
+}
+
+p {
+  max-width: 660px;
+  margin: 0 auto;
+  font-weight: 300;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  text-align: left;
+}
+
+h1 {
+  font-size: 4rem;
+  display: inline-block;
+  font-weight: 100;
+  margin: 1rem auto;
+}
+
+@supports (background: paint(something)) {
+  h1 {
+    background: paint(extra-randomBg);
+  }
+
+  a {
+    background: paint(extra-randomBg);
+  }
+}
