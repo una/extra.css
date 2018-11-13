@@ -13,7 +13,7 @@ if (typeof registerPaint !== 'undefined') {
       const color = properties.get('--extra-crossColor')
       const spread = properties.get('--extra-crossSpread')
       const spreadPercent = spread / 100
-      const verticalStart = (size.height - (size.height * spreadPercent)) / 2
+      const verticalStart = (size.height - (size.height * spreadPercent)) * 1.5
 
       ctx.lineWidth = lineWidth
       ctx.strokeStyle = color
