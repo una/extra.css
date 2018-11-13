@@ -87,9 +87,9 @@ h2 {
     transform: rotate(-20deg)
   }
 
-  a {
+  span {
     --extra-crossColor: #d4f;/* default: black */
-    --extra-crossSpread: 50; /* default: 100, which is 100% of the height of the element */
+    --extra-crossSpread: 10; /* default: 100, which is 100% of the height of the element */
 
     background: paint(extra-crossOut);
   }
