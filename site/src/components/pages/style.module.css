@@ -1,0 +1,39 @@
+:root {
+  --accentColor: #5858ff;
+}
+
+.paraText {
+  max-width: 590px;
+  margin: 1rem auto 2rem;
+  padding: 1.5rem 0;
+  font-size: 0.8rem;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.paraText span a {
+  background: #ccf;
+  font-weight: 600;
+  text-transform: lowercase;
+  color: black;
+  font-size: inherit;
+}
+
+.paraText a {
+  color: white;
+  background: var(--accentColor);
+  text-align: center;
+  font-size: 60%;
+  text-transform: uppercase;
+  font-weight: 700;
+  opacity: 0.8;
+  vertical-align: middle;
+}
+
+.paraText a:hover {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle%3E.squiggle{animation:shift .5s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='#000000' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+  background-position: 0 95%;
+  background-size: auto 2px;
+  background-repeat: repeat-x;
+  text-decoration: none;
+}

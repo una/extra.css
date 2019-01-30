@@ -1,0 +1,13 @@
+.footer {
+  text-align: center;
+  padding: 0.5rem;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  width: 100%;
+  background: #eee;
+}
+
+.footer a {
+  color: var(--accentColor);
+}
