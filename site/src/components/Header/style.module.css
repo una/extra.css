@@ -1,16 +1,50 @@
-.header {
-  width: 100%;
-  background: #222;
-  padding: 1rem;
-  font-size: 1rem;
-  font-weight: 300;
-  font-family: 'Montserrat';
+.header{
+  border-bottom: 1px solid;
+  overflow: hidden;
+  white-space: nowrap;
+  display: flex;
 }
 
-.header a {
-  max-width: 1240px;
-  margin: 0 auto;
-  display: block;
-  text-decoration: none;
-  color: white;
+.header > *,
+.set1 > *,
+.set2 > * {
+  display: inline;
+}
+
+.set1,
+.set2 {
+  display: flex;
+  align-items: center;
+}
+
+.set1 > *,
+.set2 > * {
+  margin: 0 1rem;
+}
+
+.set1 {
+  animation: set1 50s linear infinite;
+}
+
+.set2 {
+  animation: set2 50s linear infinite;
+  animation-delay: 25s;
+}
+
+@keyframes set1 {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-200%);
+  }
+}
+
+@keyframes set2 {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-200%);
+  }
 }
