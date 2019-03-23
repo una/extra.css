@@ -1,16 +1,31 @@
 import React from 'react'
 import Layout from '../components/layout'
-import Image from '../components/image'
 import SEO from '../components/seo'
-import Header from '../components/Header'
+import Card from '../components/Card'
+
+// const sampleObj = (sample) => {
+//   const sampleFolder = `../../../samples/${sample}`
+//   const sampleIndex = `${sampleFolder}/index.html`
+//   const sampleProps = `${sampleFolder}/properties.js`
+//   const sampleStyle = `${sampleFolder}/style.css`
+//   const sampleWorklet = `${sampleFolder}/worklet.js`
+
+//   return {
+//     sampleIndex,
+//     sampleProps,
+//     sampleStyle,
+//     sampleWorklet
+//   }
+// }
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" keywords={[`houdini`, `css`, `library`, `extra.css`]} />
-    <Header />
     <p>A CSS <a href="http://ishoudinireadyyet.com">Houdini</a> library for making your site a little more extra.</p>
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
+    
+    {/* All the demos */}
+    <Card />
     </div>
   </Layout>
 )
