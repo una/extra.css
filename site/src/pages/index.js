@@ -1,7 +1,7 @@
 import React from 'react'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
-import Card from '../components/Card'
+import CrossOut from '../components/Demos/CrossOut'
 
 // const sampleObj = (sample) => {
 //   const sampleFolder = `../../../samples/${sample}`
@@ -22,11 +22,10 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" keywords={[`houdini`, `css`, `library`, `extra.css`]} />
     <p>A CSS <a href="http://ishoudinireadyyet.com">Houdini</a> library for making your site a little more extra.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
     
     {/* All the demos */}
-    <Card />
-    </div>
+    <CrossOut />
+    
   </Layout>
 )
 
