@@ -20,6 +20,7 @@ const Layout = ({ children }) => (
           {children}
           <footer className={style.footer}>
             Made with love by <a href="https://www.twitter.com/una">@una</a>
+            <small>Background from this very cool site: <a href="https://svgbackgrounds.com">svgbackgrounds.com</a></small>
           </footer>
       </>
     )}
