@@ -12,3 +12,31 @@
   align-items: center;
   padding: 2rem;
 }
+
+.links {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 1rem;
+  max-width: 380px;
+}
+
+.links a {
+  background: #ddf;
+  border: 1px solid #bbe;
+  color: #222;
+  border-radius: 5px;
+  font-size: 12px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  transition-duration: 0.25s;
+  padding: 0.5em 0.6em;
+}
+
+.links a:hover {
+  color: white;
+  background: #77f;
+  border-color: #337;
+}

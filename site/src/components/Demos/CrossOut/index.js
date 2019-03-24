@@ -51,6 +51,12 @@ export default class CrossOut extends Component {
               onChange={e => this.setState({ color: e.target.value })} />
           </li>
         </ul>
+        <ul className={CardStyle.links}>
+            <li><a href="https://github.com/una/extra.css/blob/master/samples/crossOut/index.html">HTML</a></li>
+            <li><a href="https://github.com/una/extra.css/blob/master/samples/crossOut/worklet.js">Worklet</a></li>
+            <li><a href="https://github.com/una/extra.css/blob/master/samples/crossOut/properties.js">Custom Props</a></li>
+            <li><a href="https://github.com/una/extra.css/blob/master/samples/crossOut/style.css">CSS</a></li>
+          </ul>
       </Card>
     )
   }
