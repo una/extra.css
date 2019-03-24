@@ -1,15 +1,17 @@
 import React, { Component } from 'react'
 import Card from '../../Card'
 import CardStyle from '../../Card/style.module.css'
+import { randomHex } from '../../utils'
+
 const worklet = '/samples/crossOut/worklet.js'
 const properties = '/samples/crossOut/properties.js'
 
 
 export default class CrossOut extends Component {
   state = {
-    spread: 2,
-    color: '#ff0000',
-    width: 2
+    spread: 40,
+    color: randomHex(),
+    width: 4
   }
 
   componentDidMount () {
@@ -30,6 +32,7 @@ export default class CrossOut extends Component {
   render() {
     return (
       <Card>
+        <h2 className={CardStyle.name}>Cross-Out</h2>
         <div className={CardStyle.demoArea}>
           <h1 className={CardStyle.demoText} contentEditable style={{
              '--extra-crossColor': this.state.color,
@@ -39,7 +42,7 @@ export default class CrossOut extends Component {
             }}
             > extra.css </h1>
         </div>
-        <ul className="customProps">
+        <ul className={CardStyle.customProps}>
           <li>
             <label htmlFor="--extra-crossSpread">--extra-crossSpread:</label> <input type="number" value={this.state.spread} id="--extra-crossSpread" ref={this.spread} onChange={e => this.setState({ spread: e.target.value })}/>
           </li>

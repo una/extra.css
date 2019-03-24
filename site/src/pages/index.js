@@ -10,7 +10,7 @@ import style from './style.module.css'
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" keywords={[`houdini`, `css`, `library`, `extra.css`]} />
-    <p>A CSS <a href="http://ishoudinireadyyet.com">Houdini</a> library for making your site a little more extra.</p>
+    <p>A CSS <a href="http://ishoudinireadyyet.com">Houdini</a> library for making your site a little more <span>#extra</span>.</p>
     
     <div className={style.demos}>
       {/* All the demos */}

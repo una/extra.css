@@ -1,14 +1,16 @@
 import React, { Component } from 'react'
 import Card from '../../Card'
 import CardStyle from '../../Card/style.module.css'
+import { randomHex } from '../../utils'
+
 const worklet = '/samples/scallopedBorder/worklet.js'
 const properties = '/samples/scallopedBorder/properties.js'
 
 
 export default class ScallopedBorder extends Component {
   state = {
-    radius: 10,
-    color: '#ff0000',
+    radius: 9,
+    color: randomHex(),
     weight: 2
   }
 
@@ -30,6 +32,7 @@ export default class ScallopedBorder extends Component {
   render() {
     return (
       <Card>
+        <h2 className={CardStyle.name}>Scalloped Border</h2>
         <div className={CardStyle.demoArea}>
           <h1 className={CardStyle.demoText} contentEditable style={{
              '--extra-scallopColor': this.state.color,
@@ -39,7 +42,7 @@ export default class ScallopedBorder extends Component {
             }}
             > extra.css </h1>
         </div>
-        <ul className="customProps">
+        <ul className={CardStyle.customProps}>
           <li>
             <label htmlFor="--extra-scallopRadius">--extra-scallopRadius:</label> <input type="number" value={this.state.radius} id="--extra-scallopRadius" ref={this.radius} onChange={e => this.setState({ radius: e.target.value })}/>
           </li>

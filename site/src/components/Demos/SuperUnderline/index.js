@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import Card from '../../Card'
 import CardStyle from '../../Card/style.module.css'
+import { randomHex } from '../../utils'
+
 const worklet = '/samples/superUnderline/worklet.js'
 const properties = '/samples/superUnderline/properties.js'
 
@@ -8,9 +10,9 @@ const properties = '/samples/superUnderline/properties.js'
 export default class SuperUnderline extends Component {
   state = {
     number: 3,
-    color: '#ff0000',
+    color: randomHex(),
     spread: 20,
-    width: 2
+    width: 1
   }
 
   componentDidMount () {
@@ -31,6 +33,7 @@ export default class SuperUnderline extends Component {
   render() {
     return (
       <Card>
+        <h2 className={CardStyle.name}>Super Underline</h2>
         <div className={CardStyle.demoArea}>
           <h1 className={CardStyle.demoText} contentEditable style={{
              '--extra-underlineColor': this.state.color,
@@ -41,7 +44,7 @@ export default class SuperUnderline extends Component {
             }}
             > extra.css </h1>
         </div>
-        <ul className="customProps">
+        <ul className={CardStyle.customProps}>
           <li>
             <label htmlFor="--extra-underlineNumber">--extra-underlineNumber:</label> <input type="number" value={this.state.number} id="--extra-underlineNumber" ref={this.number} onChange={e => this.setState({ number: e.target.value })}/>
           </li>

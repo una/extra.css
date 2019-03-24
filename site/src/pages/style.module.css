@@ -1,8 +1,56 @@
 .demos {
   display: grid;
   grid-gap: 20px;
-  grid-template-rows: 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
-  max-width: 1000px;
+  grid-template-rows: repeat(auto,1fr);
+  grid-template-columns: repeat(2, 1fr);
+  padding: 2rem;
+  max-width: 1200px;
   margin: 0 auto;
+}
+
+p {
+  margin: 2rem auto 0;
+  text-align: center;
+  grid-row: 2;
+}
+
+p span,
+p a {
+  text-decoration: wavy;
+  text-decoration-line: underline;
+  text-decoration-color: #5bffb5;
+  font-weight: 600;
+  padding-bottom: 0.5rem;
+}
+
+.demos > div:nth-child(even) {
+  grid-column: 2;
+  margin-top: -170px;
+}
+
+.demos > div:nth-child(2) {
+  grid-row: 2;
+}
+
+.demos > div:nth-child(3) {
+  grid-row: 3;
+}
+
+.demos > div:nth-child(4) {
+  grid-row: 4;
+}
+
+.demos > div:nth-child(5) {
+  grid-row: 5;
+}
+
+@media (max-width: 1020px) {
+  .demos {
+    grid-template-columns: 1fr;
+    max-width: 800px;
+  }
+  .demos > div:nth-child(even) {
+    margin-top: 0;
+    grid-column: 1;
+  }
 }
