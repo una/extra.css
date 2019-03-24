@@ -27,9 +27,6 @@
   align-items: center;
   padding: 2rem;
   margin: 0 auto;
-  align-items: center;
-  padding: 2rem;
-  margin: 0 auto;
   word-break: break-word;
   overflow: hidden;
 }
@@ -108,4 +105,11 @@
   font-size: 1rem;
   margin: 0.15rem 0.05rem;
   color: #77f;
+}
+
+@media (max-width: 600px) {
+  .demoText {
+    font-size: 2rem;
+    padding: 1rem;
+  }
 }

@@ -14,7 +14,27 @@ body {
   margin: 0 auto;
 }
 
-p {
+.warning {
+  padding: 1rem;
+  margin: 0;
+  color: black;
+  background: #ff6f24;
+  text-align: center;
+  font-weight: 600;
+}
+
+.warning a {
+  color: currentColor;
+  border-bottom: 0.1em solid #77f;
+  text-decoration: none;
+  transition-duration: 0.25s;
+}
+
+.warning a:hover {
+  color: white;
+}
+
+.intro {
   margin: 0 auto;
   text-align: center;
   background: #f8ff3c;
@@ -24,7 +44,7 @@ p {
   transition-duration: 0.25s;
 }
 
-p span {
+.intro span {
   text-decoration: wavy;
   text-decoration-line: underline;
   text-decoration-color: #ff5b81;
@@ -32,7 +52,7 @@ p span {
   padding-bottom: 0.5rem;
 }
 
-p a {
+.intro a {
   border-bottom: 0.1em solid #77f;
   color: #ff4b00;
   text-decoration: none;
@@ -40,8 +60,8 @@ p a {
   font-weight: 600;
 }
 
-p a:hover,
-p a:focus {
+.intro a:hover,
+.intro a:focus {
   border-color: #ff4b00;
   color: #77f;
 }
