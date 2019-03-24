@@ -12,7 +12,7 @@ export default class CrossOut extends Component {
     width: 2
   }
 
-  componentWillMount () {
+  componentDidMount () {
     const script1 = document.createElement("script")
     const script2 = document.createElement("script")
 
@@ -30,8 +30,8 @@ export default class CrossOut extends Component {
   render() {
     return (
       <Card>
-        <div className="demoArea">
-          <h1 className={CardStyle.demoText} contenteditable style={{
+        <div className={CardStyle.demoArea}>
+          <h1 className={CardStyle.demoText} contentEditable style={{
              '--extra-crossColor': this.state.color,
              '--extra-crossWidth': this.state.width,
              '--extra-crossSpread': this.state.spread,
@@ -41,13 +41,13 @@ export default class CrossOut extends Component {
         </div>
         <ul className="customProps">
           <li>
-            <label htmlFor="--extra-crossSpread">--extra-crossSpread</label> <input type="number" value={this.state.spread} id="--extra-crossSpread" ref={this.spread} onChange={e => this.setState({ spread: e.target.value })}/>
+            <label htmlFor="--extra-crossSpread">--extra-crossSpread:</label> <input type="number" value={this.state.spread} id="--extra-crossSpread" ref={this.spread} onChange={e => this.setState({ spread: e.target.value })}/>
           </li>
           <li>
-            <label htmlFor="--extra-crossWidth">--extra-crossWidth</label> <input type="number" value={this.state.width} id="--extra-crossWidth" ref={this.width} onChange={e => this.setState({ width: e.target.value })}/>
+            <label htmlFor="--extra-crossWidth">--extra-crossWidth:</label> <input type="number" value={this.state.width} id="--extra-crossWidth" ref={this.width} onChange={e => this.setState({ width: e.target.value })}/>
           </li>
           <li>
-            <label htmlFor="--extra-crossColor">--extra-crossColor</label> <input type="color" value={this.state.color} id="--extra-crossColor"
+            <label htmlFor="--extra-crossColor">--extra-crossColor:</label> <input type="color" value={this.state.color} id="--extra-crossColor"
               onChange={e => this.setState({ color: e.target.value })} />
           </li>
         </ul>
