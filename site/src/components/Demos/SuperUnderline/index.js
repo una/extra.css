@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import Card from '../../Card'
 import CardStyle from '../../Card/style.module.css'
-import { randomHex } from '../../utils'
 
 const worklet = '/samples/superUnderline/worklet.js'
 const properties = '/samples/superUnderline/properties.js'
@@ -10,7 +9,7 @@ const properties = '/samples/superUnderline/properties.js'
 export default class SuperUnderline extends Component {
   state = {
     number: 3,
-    color: randomHex(),
+    color: '#2fcbe7',
     spread: 20,
     width: 1
   }
@@ -46,17 +45,32 @@ export default class SuperUnderline extends Component {
         </div>
         <ul className={CardStyle.customProps}>
           <li>
-            <label htmlFor="--extra-underlineNumber">--extra-underlineNumber:</label> <input type="number" value={this.state.number} id="--extra-underlineNumber" ref={this.number} onChange={e => this.setState({ number: e.target.value })}/>
-          </li>
-          <li>
-            <label htmlFor="--extra-underlineWidth">--extra-underlineWidth:</label> <input type="number" value={this.state.width} id="--extra-underlineWidth" ref={this.width} onChange={e => this.setState({ width: e.target.value })}/>
-          </li>
-          <li>
             <label htmlFor="--extra-underlineColor">--extra-underlineColor:</label> <input type="color" value={this.state.color} id="--extra-underlineColor"
               onChange={e => this.setState({ color: e.target.value })} />
           </li>
           <li>
-            <label htmlFor="--extra-underlineSpread">--extra-underlineSpread:</label> <input type="number" value={this.state.spread} id="--extra-underlineSpread" ref={this.spread} onChange={e => this.setState({ spread: e.target.value })}/>
+            <label htmlFor="--extra-underlineNumber">--extra-underlineNumber:</label>
+            <div>
+              <div className={CardStyle.inputVal}>{this.state.number}</div>
+              <input className={CardStyle.underlineNumber} type="range" min="0" max="40" value={this.state.number} id="--extra-underlineNumber"
+                onChange={e => this.setState({ number: e.target.value })} />
+            </div>
+          </li>
+          <li>
+            <label htmlFor="--extra-underlineWidth">--extra-underlineWidth:</label>
+            <div>
+              <div className={CardStyle.inputVal}>{this.state.width}</div>
+              <input className={CardStyle.underlineWidth} type="range" min="0" max="20" value={this.state.width} id="--extra-underlineWidth"
+                onChange={e => this.setState({ width: e.target.value })} />
+            </div>
+          </li>
+          <li>
+            <label htmlFor="--extra-underlineSpread">--extra-underlineSpread:</label>
+            <div>
+              <div className={CardStyle.inputVal}>{this.state.spread}</div>
+              <input className={CardStyle.underlineSpread} type="range" min="0" max="30" value={this.state.spread} id="--extra-underlineSpread"
+                onChange={e => this.setState({ spread: e.target.value })} />
+            </div>
           </li>
         </ul>
         <ul className={CardStyle.links}>
