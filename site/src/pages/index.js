@@ -5,6 +5,7 @@ import CrossOut from '../components/Demos/CrossOut'
 import ScallopedBorder from '../components/Demos/ScallopedBorder'
 import SuperUnderline from '../components/Demos/SuperUnderline'
 import Sparkles from '../components/Demos/Sparkles'
+import HowTo from '../components/HowTo'
 import style from './style.module.css'
 
 export default class IndexPage extends Component {
@@ -33,6 +34,8 @@ export default class IndexPage extends Component {
           <SuperUnderline />
           <CrossOut />
         </div>
+        
+        <HowTo/>
         
       </Layout>
     )
