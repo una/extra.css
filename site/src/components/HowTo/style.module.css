@@ -1,0 +1,23 @@
+.howTo {
+  background: white;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+ol li {
+  list-style: inherit;
+  margin-bottom: 0.5rem;
+}
+
+.fileTag {
+  font-size: 70%;
+  vertical-align: bottom;
+  background: #f8ff3d;
+  border-radius: 5px;
+  border: 1px solid #ffa480;
+  padding: 0.2em 0.4em;
+}
