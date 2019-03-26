@@ -10,11 +10,47 @@
 <body>
   <h1>Hello World</h1>
 
-  <script>
+  <script type="module">
+    import {ExtraSparkles} from './index.js'
+
     if ('paintWorklet' in CSS) {
-      CSS.paintWorklet.addModule('./worklet.js');
+      CSS.registerProperty({
+        name: '--extra-sparkleNumber',
+        syntax: '<number>',
+        inherits: false,
+        initialValue: 30,
+      });
+
+      CSS.registerProperty({
+        name: '--extra-sparkleHue',
+        syntax: '<number>',
+        inherits: false,
+        initialValue: 60,
+      });
+
+      CSS.registerProperty({
+        name: '--extra-sparkleHeightVariance',
+        syntax: '<number>',
+        inherits: false,
+        initialValue: 9,
+      });
+
+      CSS.registerProperty({
+        name: '--extra-sparkleWidthVariance',
+        syntax: '<number>',
+        inherits: false,
+        initialValue: 12,
+      });
+
+      CSS.registerProperty({
+        name: '--extra-sparkleWeightVariance',
+        syntax: '<number>',
+        inherits: false,
+        initialValue: 2,
+      });
+
+      CSS.paintWorklet.addModule(ExtraSparkles);
     }
   </script>
-  <script src='properties.js'></script>
 </body>
 </html>
