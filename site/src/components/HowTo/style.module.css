@@ -21,3 +21,8 @@ ol li {
   border: 1px solid #ffa480;
   padding: 0.2em 0.4em;
 }
+
+.codepen {
+  height: 445px;
+  width: 100%;
+}

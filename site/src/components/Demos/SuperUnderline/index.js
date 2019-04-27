@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
 import Card from '../../Card'
+import CardLinks from '../../CardLinks'
 import CardStyle from '../../Card/style.module.css'
 
 const worklet = '/samples/superUnderline/worklet.js'
 const properties = '/samples/superUnderline/properties.js'
-
 
 export default class SuperUnderline extends Component {
   state = {
@@ -73,12 +73,7 @@ export default class SuperUnderline extends Component {
             </div>
           </li>
         </ul>
-        <ul className={CardStyle.links}>
-            <li><a href="https://github.com/una/extra.css/blob/master/samples/superUnderline/index.html">HTML</a></li>
-            <li><a href="https://github.com/una/extra.css/blob/master/samples/superUnderline/worklet.js">Worklet</a></li>
-            <li><a href="https://github.com/una/extra.css/blob/master/samples/superUnderline/properties.js">Custom Props</a></li>
-            <li><a href="https://github.com/una/extra.css/blob/master/samples/superUnderline/style.css">CSS</a></li>
-          </ul>
+        <CardLinks name='scalloped-border'/>
       </Card>
     )
   }

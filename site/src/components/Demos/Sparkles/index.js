@@ -1,9 +1,10 @@
 import React, { Component } from 'react'
 import Card from '../../Card'
+import CardLinks from '../../CardLinks'
 import CardStyle from '../../Card/style.module.css'
+
 const worklet = '/samples/sparkles/worklet.js'
 const properties = '/samples/sparkles/properties.js'
-
 
 export default class Sparkles extends Component {
   state = {
@@ -85,12 +86,7 @@ export default class Sparkles extends Component {
             </div>
           </li>
         </ul>
-        <ul className={CardStyle.links}>
-            <li><a href="https://github.com/una/extra.css/blob/master/samples/sparkles/index.html">HTML</a></li>
-            <li><a href="https://github.com/una/extra.css/blob/master/samples/sparkles/worklet.js">Worklet</a></li>
-            <li><a href="https://github.com/una/extra.css/blob/master/samples/sparkles/properties.js">Custom Props</a></li>
-            <li><a href="https://github.com/una/extra.css/blob/master/samples/sparkles/style.css">CSS</a></li>
-          </ul>
+        <CardLinks name='sparkles'/>
       </Card>
     )
   }

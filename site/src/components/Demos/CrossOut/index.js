@@ -1,16 +1,17 @@
 import React, { Component } from 'react'
 import Card from '../../Card'
 import CardStyle from '../../Card/style.module.css'
+import CardLinks from '../../CardLinks'
 
 const worklet = '/samples/crossOut/worklet.js'
 const properties = '/samples/crossOut/properties.js'
-
 
 export default class CrossOut extends Component {
   state = {
     spread: 80,
     color: '#2efaae',
-    width: 4
+    width: 4,
+    copied: ''
   }
 
   componentDidMount () {
@@ -63,12 +64,7 @@ export default class CrossOut extends Component {
             </div>
           </li>
         </ul>
-        <ul className={CardStyle.links}>
-            <li><a href="https://github.com/una/extra.css/blob/master/samples/crossOut/index.html">HTML</a></li>
-            <li><a href="https://github.com/una/extra.css/blob/master/samples/crossOut/worklet.js">Worklet</a></li>
-            <li><a href="https://github.com/una/extra.css/blob/master/samples/crossOut/properties.js">Custom Props</a></li>
-            <li><a href="https://github.com/una/extra.css/blob/master/samples/crossOut/style.css">CSS</a></li>
-          </ul>
+        <CardLinks name='cross-out'/>
       </Card>
     )
   }

@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Card from '../../Card'
+import CardLinks from '../../CardLinks'
 import CardStyle from '../../Card/style.module.css'
 
 const worklet = '/samples/scallopedBorder/worklet.js'
@@ -63,12 +64,7 @@ export default class ScallopedBorder extends Component {
             </div>
           </li>
         </ul>
-        <ul className={CardStyle.links}>
-            <li><a href="https://github.com/una/extra.css/blob/master/samples/scallopedBorder/index.html">HTML</a></li>
-            <li><a href="https://github.com/una/extra.css/blob/master/samples/scallopedBorder/worklet.js">Worklet</a></li>
-            <li><a href="https://github.com/una/extra.css/blob/master/samples/scallopedBorder/properties.js">Custom Props</a></li>
-            <li><a href="https://github.com/una/extra.css/blob/master/samples/scallopedBorder/style.css">CSS</a></li>
-          </ul>
+        <CardLinks name='scalloped-border'/>
       </Card>
     )
   }
