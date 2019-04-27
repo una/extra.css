@@ -377,14 +377,10 @@ dd {
   margin-bottom: 1.45rem;
 }
 p {
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 0;
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0;
-  margin-bottom: 1.45rem;
+  padding: 0;
+  margin: 0 auto 1.45rem;
+  line-height: 1.8;
+  max-width: 46em;
 }
 figure {
   margin-left: 0;
