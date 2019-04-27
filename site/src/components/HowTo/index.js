@@ -15,15 +15,15 @@ export default function HowTo() {
           <li><span className={style.fileTag}>CSS</span> Access the paint worklet with <code>background: paint(&lt;workletName&gt;);</code></li>
         </ol>
         <p>
-          The URLs are in the following format: <code>https://unpkg.com/extra.css/&lt;PackageName&gt;/&lt;FileName&gt;</code>You can grab any of the proper URLs by clicking on the links above for <strong class={CardStyle.cardAction}>worklet link</strong> and <strong class={CardStyle.cardAction}>custom props link</strong>. The <strong class={CardStyle.cardAction}>Usage</strong> tab will open up an explanatory Codepen project with everything properly hooked up.
+          The URLs are in the following format: <code>https://unpkg.com/extra.css/&lt;PackageName&gt;/&lt;FileName&gt;</code>You can grab any of the proper URLs by clicking on the links above for <strong class={CardStyle.cardAction}>worklet link</strong> and <strong class={CardStyle.cardAction}>custom props link</strong>. If you go to this link your URL bar, you will automatically be linked to the latest version number of the package, and can use that to prevent breaking with future versions. If you always want the latest, however, you can skip the version number. The <strong class={CardStyle.cardAction}>Usage</strong> tab will open up an explanatory Codepen project with everything properly hooked up.
         </p>
         <p> 
           Here is an example of what your HTML and CSS could look like for the <code>Cross Out</code> example:
         </p>
-        <iframe height="265" className={style.codepen} scrolling="no" title="Extra.CSS Example" src="//codepen.io/una/embed/WWPVjG/?height=265&theme-id=light&default-tab=css,result&editable=true" frameborder="no" allowtransparency="true" allowfullscreen="true">
-  See the Pen <a href='https://codepen.io/una/pen/WWPVjG/'>Extra.CSS Example</a> by Una Kravets
-  (<a href='https://codepen.io/una'>@una</a>) on <a href='https://codepen.io'>CodePen</a>.
-</iframe>
+        <iframe height="445" class={style.codepen} scrolling="no" title="Extra.CSS Example" src="//codepen.io/una/embed/WWPVjG/?height=428&theme-id=36749&default-tab=css,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+        See the Pen <a href='https://codepen.io/una/pen/WWPVjG/'>Extra.CSS Example</a> by Una Kravets
+        (<a href='https://codepen.io/una'>@una</a>) on <a href='https://codepen.io'>CodePen</a>.
+      </iframe>
         <p>This is a WIP method! I'm working on figuring out the best way to include these as individual modules, but running into issues with the registration step and initializing the worklet as a module. Check back for more soon.
         </p>
       </div>

@@ -86,7 +86,7 @@ export default class Sparkles extends Component {
             </div>
           </li>
         </ul>
-        <CardLinks name='sparkles'/>
+        <CardLinks name='sparkles' penLink='MRxgNN'/>
       </Card>
     )
   }
