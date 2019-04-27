@@ -3,8 +3,8 @@ import Card from '../../Card'
 import CardLinks from '../../CardLinks'
 import CardStyle from '../../Card/style.module.css'
 
-const worklet = '/samples/sparkles/worklet.js'
-const properties = '/samples/sparkles/properties.js'
+const worklet = 'https://unpkg.com/extra.css/sparkles/worklet.js'
+const properties = 'https://unpkg.com/extra.css/sparkles/properties.js'
 
 export default class Sparkles extends Component {
   state = {

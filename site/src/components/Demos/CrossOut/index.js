@@ -3,8 +3,8 @@ import Card from '../../Card'
 import CardStyle from '../../Card/style.module.css'
 import CardLinks from '../../CardLinks'
 
-const worklet = '/samples/crossOut/worklet.js'
-const properties = '/samples/crossOut/properties.js'
+const worklet = 'https://unpkg.com/extra.css/crossOut/worklet.js'
+const properties = 'https://unpkg.com/extra.css/crossOut/properties.js'
 
 export default class CrossOut extends Component {
   state = {

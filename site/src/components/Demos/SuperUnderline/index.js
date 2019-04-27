@@ -3,8 +3,8 @@ import Card from '../../Card'
 import CardLinks from '../../CardLinks'
 import CardStyle from '../../Card/style.module.css'
 
-const worklet = '/samples/superUnderline/worklet.js'
-const properties = '/samples/superUnderline/properties.js'
+const worklet = 'https://unpkg.com/extra.css/superUnderline/worklet.js'
+const properties = 'https://unpkg.com/extra.css/superUnderline/properties.js'
 
 export default class SuperUnderline extends Component {
   state = {

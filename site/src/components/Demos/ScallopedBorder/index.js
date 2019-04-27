@@ -3,8 +3,8 @@ import Card from '../../Card'
 import CardLinks from '../../CardLinks'
 import CardStyle from '../../Card/style.module.css'
 
-const worklet = '/samples/scallopedBorder/worklet.js'
-const properties = '/samples/scallopedBorder/properties.js'
+const worklet = 'https://unpkg.com/extra.css/scallopedBorder/worklet.js'
+const properties = 'https://unpkg.com/extra.css/scallopedBorder/properties.js'
 
 
 export default class ScallopedBorder extends Component {
