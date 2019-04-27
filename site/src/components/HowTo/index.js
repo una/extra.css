@@ -24,7 +24,7 @@ export default function HowTo() {
         See the Pen <a href='https://codepen.io/una/pen/WWPVjG/'>Extra.CSS Example</a> by Una Kravets
         (<a href='https://codepen.io/una'>@una</a>) on <a href='https://codepen.io'>CodePen</a>.
       </iframe>
-        <p>This is a WIP proof of concept for Houdini Paint Modules! I'd love to have you contribute your thoughts on <a href="https://github.com/una/extra.css">Gtihub</a>.</p>
+        <p>This is a WIP proof of concept for Houdini Paint Modules! I'd love to have you contribute your thoughts on <a href="https://github.com/una/extra.css">Github</a>.</p>
       </div>
     </div>
   )
