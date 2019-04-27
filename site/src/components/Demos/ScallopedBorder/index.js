@@ -64,7 +64,7 @@ export default class ScallopedBorder extends Component {
             </div>
           </li>
         </ul>
-        <CardLinks name='scallopedBorder' penLink='YMgzzx'/>
+        <CardLinks name='scallopedBorder' penLink='MRxWgN'/>
       </Card>
     )
   }

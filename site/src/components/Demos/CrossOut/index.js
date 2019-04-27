@@ -63,7 +63,7 @@ export default class CrossOut extends Component {
             </div>
           </li>
         </ul>
-        <CardLinks name='crossOut'/>
+        <CardLinks name='crossOut' penLink="WWPVjG"/>
       </Card>
     )
   }

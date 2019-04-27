@@ -11,7 +11,7 @@ export default class CardLinks extends Component {
   render(props) {
     return (
     <ul className={CardStyle.links}>
-      <li><a className={CardStyle.cardAction} href={`https://codepen.io/una/pen/${this.props.penLink}`}>Usage</a></li>
+      <li><a className={CardStyle.cardAction} href={`https://codepen.io/una/pen/${this.props.penLink}`} target="_blank" rel="noopener noreferrer">Usage</a></li>
       <li>
         <CopyToClipboard text={`https://unpkg.com/extra.css/${this.props.name}/worklet.js`} onCopy={() => this.setState({copied: 'worklet'})}>
           <button className={classnames(CardStyle.cardAction, this.state.copied === 'worklet' && CardStyle.copied)}>Worklet Link</button>
