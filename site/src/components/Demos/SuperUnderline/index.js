@@ -73,7 +73,7 @@ export default class SuperUnderline extends Component {
             </div>
           </li>
         </ul>
-        <CardLinks name='scalloped-border'/>
+        <CardLinks name='superUnderline'/>
       </Card>
     )
   }

@@ -26,3 +26,7 @@ ol li {
   height: 445px;
   width: 100%;
 }
+
+strong {
+  pointer-events: none;
+}

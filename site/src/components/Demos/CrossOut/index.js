@@ -10,8 +10,7 @@ export default class CrossOut extends Component {
   state = {
     spread: 80,
     color: '#2efaae',
-    width: 4,
-    copied: ''
+    width: 4
   }
 
   componentDidMount () {
@@ -64,7 +63,7 @@ export default class CrossOut extends Component {
             </div>
           </li>
         </ul>
-        <CardLinks name='cross-out'/>
+        <CardLinks name='crossOut'/>
       </Card>
     )
   }
