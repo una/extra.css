@@ -8,7 +8,7 @@ const properties = 'https://unpkg.com/extra.css/crossOut/properties.js'
 
 export default class CrossOut extends Component {
   state = {
-    spread: 80,
+    spread: 100,
     color: '#2efaae',
     width: 4
   }
