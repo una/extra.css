@@ -54,7 +54,7 @@ export default class Confetti extends Component {
             <div>
               <div className={CardStyle.inputVal}>
               {this.state.lengthVariance}</div>
-              <input className={CardStyle.rangeSlider} type="range" value={this.state.lengthVariance} id="--extra-confettiLengthVariance"
+              <input className={CardStyle.rangeSlider} min="1" max="30" type="range" value={this.state.lengthVariance} id="--extra-confettiLengthVariance"
                 onChange={e => this.setState({ lengthVariance: e.target.value })} />
             </div>
           </li>
@@ -62,11 +62,11 @@ export default class Confetti extends Component {
             <label htmlFor="--extra-confettiWeightVariance">--extra-confettiWeightVariance:</label>
             <div>
               <div className={CardStyle.inputVal}>{this.state.weightVariance}</div>
-              <input className={CardStyle.rangeSlider} type="range" min="0" max="10" value={this.state.weightVariance} id="--extra-confettiWeightVariance" ref={this.weightVariance} onChange={e => this.setState({ weightVariance: e.target.value })}/>
+              <input className={CardStyle.rangeSlider} type="range" min="1" max="10" value={this.state.weightVariance} id="--extra-confettiWeightVariance" ref={this.weightVariance} onChange={e => this.setState({ weightVariance: e.target.value })}/>
             </div>
           </li>
         </ul>
-        <CardLinks name='sparkles' penLink='MRxgNN'/>
+        <CardLinks name='sparkles' penLink='mgoXMO'/>
       </Card>
     )
   }
