@@ -4,7 +4,8 @@
   "description": "A Houdini library for making your website a little more #extra",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node ../scripts/build.js"
   },
   "repository": {
     "type": "git",
