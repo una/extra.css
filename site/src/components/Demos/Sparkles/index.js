@@ -14,7 +14,7 @@ export default class Sparkles extends Component {
 
   componentDidMount () {
     const workletScript = document.createElement("script")
-    workletScript.src = `https://unpkg.com/extra.css/sparkles.js`
+    workletScript.src = `https://unpkg.com/extra.css@1.2.0/sparkles.js`
     document.body.appendChild(workletScript)
   }
 

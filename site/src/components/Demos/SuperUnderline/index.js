@@ -13,7 +13,7 @@ export default class SuperUnderline extends Component {
 
   componentDidMount () {
     const workletScript = document.createElement("script")
-    workletScript.src = `https://unpkg.com/extra.css/superUnderline.js`
+    workletScript.src = `https://unpkg.com/extra.css@1.2.0/superUnderline.js`
     document.body.appendChild(workletScript)
   }
 

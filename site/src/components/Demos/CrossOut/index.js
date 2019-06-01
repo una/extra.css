@@ -12,7 +12,7 @@ export default class CrossOut extends Component {
 
   componentDidMount () {
     const workletScript = document.createElement("script")
-    workletScript.src = `https://unpkg.com/extra.css/crossOut.js`
+    workletScript.src = `https://unpkg.com/extra.css@1.2.0/crossOut.js`
     document.body.appendChild(workletScript)
   }
 
