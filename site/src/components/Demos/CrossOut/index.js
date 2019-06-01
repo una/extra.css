@@ -3,9 +3,6 @@ import Card from '../../Card'
 import CardStyle from '../../Card/style.module.css'
 import CardLinks from '../../CardLinks'
 
-const worklet = 'https://unpkg.com/extra.css/crossOut/worklet.js'
-const properties = 'https://unpkg.com/extra.css/crossOut/properties.js'
-
 export default class CrossOut extends Component {
   state = {
     spread: 100,
@@ -14,18 +11,11 @@ export default class CrossOut extends Component {
   }
 
   componentDidMount () {
-    const script1 = document.createElement("script")
-    const script2 = document.createElement("script")
+    const workletScript = document.createElement("script")
+    workletScript.async = true
+    workletScript.src = `https://unpkg.com/extra.css/crossOut.js`
 
-    script1.innerHTML = `if ('paintWorklet' in CSS) {
-      CSS.paintWorklet.addModule('${worklet}');
-    }`
-    script1.async = true
-    script2.src = properties
-    script2.async = true
-
-    document.body.appendChild(script1)
-    document.body.appendChild(script2)
+    document.body.appendChild(workletScript)
   }
 
   render() {

@@ -3,9 +3,6 @@ import Card from '../../Card'
 import CardLinks from '../../CardLinks'
 import CardStyle from '../../Card/style.module.css'
 
-const worklet = 'https://unpkg.com/extra.css/sparkles/worklet.js'
-const properties = 'https://unpkg.com/extra.css/sparkles/properties.js'
-
 export default class Sparkles extends Component {
   state = {
     number: 30,
@@ -16,20 +13,13 @@ export default class Sparkles extends Component {
   }
 
   componentDidMount () {
-    const script1 = document.createElement("script")
-    const script2 = document.createElement("script")
+    const workletScript = document.createElement("script")
+    workletScript.async = true
+    workletScript.src = `https://unpkg.com/extra.css/sparkles.js`
 
-    script1.innerHTML = `if ('paintWorklet' in CSS) {
-      CSS.paintWorklet.addModule('${worklet}');
-    }`
-    script1.async = true
-    script2.src = properties
-    script2.async = true
-
-    document.body.appendChild(script1)
-    document.body.appendChild(script2)
+    document.body.appendChild(workletScript)
   }
-
+  
   render() {
     return (
       <Card>

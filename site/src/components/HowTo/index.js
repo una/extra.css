@@ -7,15 +7,14 @@ export default function HowTo() {
     <div className={style.howTo}>
       <div className={style.container}>
         <h2>How to Use This Library</h2>
-        <p>We're currently using <a href="https://unpkg.com/">unpkg</a> to serve these files. There is no build step requirement, but you must register the worklet and its custom properties.</p>
-        <p>There are 3 steps to using it:</p>
+        <p>We're currently using <a href="https://unpkg.com/">unpkg</a> to serve these files. There is no build step requirement, but remember this is experimental and will not work in all browsers.</p>
+        <p>There are 2 steps to using it:</p>
         <ol>
-          <li><span className={style.fileTag}>HTML</span> Register the worklet to the CSS interface: <code>CSS.paintWorklet.addModule('&lt;WorkletFile&gt;')</code></li>
-          <li><span className={style.fileTag}>HTML</span> Register the necessary custom properties: <code>&lt;script src='&lt;PropertiesFile&gt;'&gt;&lt;/script&gt;</code></li>
+          <li><span className={style.fileTag}>HTML</span> Include the worklet and custom properties file <code>&lt;script src='&lt;packageName&gt;'&gt;&lt;/script&gt;</code></li>
           <li><span className={style.fileTag}>CSS</span> Access the paint worklet with <code>background: paint(&lt;workletName&gt;);</code></li>
         </ol>
         <p>
-          The URLs are in the following format: <code>https://unpkg.com/extra.css/&lt;PackageName&gt;/&lt;FileName&gt;</code>You can grab any of the proper URLs by clicking on the links above for <strong class={CardStyle.cardAction}>worklet link</strong> and <strong class={CardStyle.cardAction}>custom props link</strong>. If you go to this link your URL bar, you will automatically be linked to the latest version number of the package, and can use that to prevent breaking with future versions. If you always want the latest, however, you can skip the version number. The <strong class={CardStyle.cardAction}>Usage</strong> tab will open up an explanatory Codepen project with everything properly hooked up.
+          The URLs are in the following format: <code>https://unpkg.com/extra.css/&lt;packageName&gt;.js</code>You can grab any of the proper URLs by clicking on the links above for <strong class={CardStyle.cardAction}>CDN Link</strong>. If you go to this link your URL bar, you will automatically be linked to the latest version number of the JS package which includes all of the registered custom properties and the worklet. This is a link to the latest version (i.e. <code>https://unpkg.com/extra.css@1.1.0/&lt;PackageName&gt;.js</code>), but if you always want the evergreen latest version, you can skip the version number. The <strong class={CardStyle.cardAction}>Demo</strong> tab will open up an explanatory Codepen project with everything properly hooked up.
         </p>
         <p> 
           Here is an example of what your HTML and CSS could look like for the <code>Cross Out</code> example:

@@ -11,15 +11,10 @@ export default class CardLinks extends Component {
   render(props) {
     return (
     <ul className={CardStyle.links}>
-      <li><a className={CardStyle.cardAction} href={`https://codepen.io/una/pen/${this.props.penLink}`} target="_blank" rel="noopener noreferrer">Usage</a></li>
+      <li><a className={CardStyle.cardAction} href={`https://codepen.io/una/pen/${this.props.penLink}`} target="_blank" rel="noopener noreferrer">Demo</a></li>
       <li>
-        <CopyToClipboard text={`https://unpkg.com/extra.css/${this.props.name}/worklet.js`} onCopy={() => this.setState({copied: 'worklet'})}>
-          <button className={classnames(CardStyle.cardAction, this.state.copied === 'worklet' && CardStyle.copied)}>Worklet Link</button>
-        </CopyToClipboard>
-      </li>
-      <li>
-        <CopyToClipboard text={`https://unpkg.com/extra.css/${this.props.name}/properties.js`} onCopy={() => this.setState({copied: 'props'})}>
-          <button className={classnames(CardStyle.cardAction, this.state.copied === 'props' && CardStyle.copied)}>Custom Props Link</button>
+        <CopyToClipboard text={`https://unpkg.com/extra.css/${this.props.name}.js`} onCopy={() => this.setState({copied: 'props'})}>
+          <button className={classnames(CardStyle.cardAction, this.state.copied === 'props' && CardStyle.copied)}>CDN Link</button>
         </CopyToClipboard>
       </li>
     </ul>
