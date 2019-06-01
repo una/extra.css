@@ -17,12 +17,12 @@ dirs
     // Write a script file in base
     fs.writeFileSync(
       `./lib/${dir}.js`,
-      `      
+      `(function(){
       ${properties.toString()}
 
       const worklet = ${JSON.stringify(worklet.toString())}
       const workletBlob = URL.createObjectURL(new Blob([worklet], { type: 'application/javascript' }))
       window.CSS.paintWorklet.addModule(workletBlob)
+    })()
     `
-    );
   });
