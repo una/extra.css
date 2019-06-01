@@ -12,9 +12,7 @@ export default class Confetti extends Component {
 
   componentDidMount () {
     const workletScript = document.createElement("script")
-    workletScript.async = true
     workletScript.src = `https://unpkg.com/extra.css/confetti.js`
-
     document.body.appendChild(workletScript)
   }
 

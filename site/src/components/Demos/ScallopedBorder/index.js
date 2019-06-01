@@ -12,9 +12,7 @@ export default class ScallopedBorder extends Component {
 
   componentDidMount () {
     const workletScript = document.createElement("script")
-    workletScript.async = true
     workletScript.src = `https://unpkg.com/extra.css/scallopedBorder.js`
-
     document.body.appendChild(workletScript)
   }
 

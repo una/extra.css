@@ -14,12 +14,10 @@ export default class Sparkles extends Component {
 
   componentDidMount () {
     const workletScript = document.createElement("script")
-    workletScript.async = true
     workletScript.src = `https://unpkg.com/extra.css/sparkles.js`
-
     document.body.appendChild(workletScript)
   }
-  
+
   render() {
     return (
       <Card>
