@@ -7,7 +7,7 @@ export default function HowTo() {
     <div className={style.howTo}>
       <div className={style.container}>
         <h2>How to Use This Library</h2>
-        <p>We're currently using <a href="https://unpkg.com/">unpkg</a> to serve these files. There is no build step requirement, but remember this is experimental and will not work in all browsers.</p>
+        <p>We're currently using <a href="https://unpkg.com/">unpkg</a> to serve these files. There is no build step requirement, but remember this is experimental and will not work in all browsers. You can check the support on <a href="http://ishoudinireadyyet.com">Is Houdini ready yet‽</a></p>
         <p>There are 2 steps to using it:</p>
         <ol>
           <li><span className={style.fileTag}>HTML</span> Include the worklet and custom properties file <code>&lt;script src='&lt;packageName&gt;'&gt;&lt;/script&gt;</code></li>
