@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import Card from '../../Card'
 import CardLinks from '../../CardLinks'
 import CardStyle from '../../Card/style.module.css'
+import pjson from '../../../../package.json'
 
 export default class Confetti extends Component {
   state = {
@@ -12,7 +13,7 @@ export default class Confetti extends Component {
 
   componentDidMount () {
     const workletScript = document.createElement("script")
-    workletScript.src = `https://unpkg.com/extra.css@1.2.0/confetti.js`
+    workletScript.src = `https://unpkg.com/extra.css@${pjson.extras.version}/confetti.js`
     document.body.appendChild(workletScript)
   }
 

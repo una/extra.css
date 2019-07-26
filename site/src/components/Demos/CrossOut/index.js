@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import Card from '../../Card'
 import CardStyle from '../../Card/style.module.css'
 import CardLinks from '../../CardLinks'
-
+import pjson from '../../../../package.json'
 export default class CrossOut extends Component {
   state = {
     spread: 100,
@@ -12,7 +12,7 @@ export default class CrossOut extends Component {
 
   componentDidMount () {
     const workletScript = document.createElement("script")
-    workletScript.src = `https://unpkg.com/extra.css@1.2.0/crossOut.js`
+    workletScript.src = `https://unpkg.com/extra.css@${pjson.extras.version}/crossOut.js`
     document.body.appendChild(workletScript)
   }
 

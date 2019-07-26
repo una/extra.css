@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import Card from '../../Card'
 import CardLinks from '../../CardLinks'
 import CardStyle from '../../Card/style.module.css'
-
+import pjson from '../../../../package.json'
 export default class ScallopedBorder extends Component {
   state = {
     radius: 9,
@@ -12,7 +12,7 @@ export default class ScallopedBorder extends Component {
 
   componentDidMount () {
     const workletScript = document.createElement("script")
-    workletScript.src = `https://unpkg.com/extra.css@1.2.0/scallopedBorder.js`
+    workletScript.src = `https://unpkg.com/extra.css@${pjson.extras.version}/scallopedBorder.js`
     document.body.appendChild(workletScript)
   }
 

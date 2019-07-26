@@ -43,5 +43,8 @@
   },
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
+  },
+  "extras": {
+    "version": "1.2.0"
   }
 }
