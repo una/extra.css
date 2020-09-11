@@ -1,3 +1,4 @@
+import 'css-paint-polyfill'
 import React, { Component } from 'react'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
