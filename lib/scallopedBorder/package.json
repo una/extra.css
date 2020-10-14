@@ -1,0 +1,25 @@
+{
+  "name": "extra-scalloped-border",
+  "version": "1.0.0",
+  "description": "CSS Houdini paint workle from Extra.css",
+  "main": "worklet.js",
+  "props": "properties.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/una/extra.css.git"
+  },
+  "keywords": [
+    "css",
+    "houdini",
+    "worklet"
+  ],
+  "author": "Una Kravets",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/una/extra.css/issues"
+  },
+  "homepage": "https://github.com/una/extra.css#readme"
+}
